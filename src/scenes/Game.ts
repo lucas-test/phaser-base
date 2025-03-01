@@ -38,14 +38,14 @@ export class Game extends Scene
         });
         this.msg_text.setOrigin(0.5);
 
-        this.player = this.add.sprite(200,200, 'lol')
+        this.player = this.add.sprite(200,200, 'coin')
 
         this.camera.startFollow(this.player, true, 0.1, 0.1, -200, 120);
 
 
         this.anims.create({
             key: 'walk',                    // Nom de l'animation
-            frames: this.anims.generateFrameNumbers('lol', { frames: [ 0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 0 ] }),
+            frames: this.anims.generateFrameNumbers('coin', { frames: [ 0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 0 ] }),
             frameRate: 20,                  // Vitesse en frames par seconde
             repeat: -1                      // -1 pour répéter en boucle
         });
