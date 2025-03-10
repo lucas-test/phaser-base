@@ -15,7 +15,7 @@ const config: Types.Core.GameConfig = {
     parent: 'game-container',
     backgroundColor: '#028af8',
     audio: {
-        disableWebAudio: true,
+        // disableWebAudio: true,
     },
     scale: {
         mode: Phaser.Scale.FIT,

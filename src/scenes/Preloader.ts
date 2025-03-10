@@ -32,11 +32,23 @@ export class Preloader extends Scene
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath('assets');
 
+        // Chargement des images fixes
         this.load.image('logo', 'logo.png');
+
+        // Chargement des sprites
         this.load.spritesheet('coin', 'coin.png', {
             frameWidth: 48,  // Largeur de chaque frame
             frameHeight: 48, // Hauteur de chaque frame
         });
+
+        this.load.spritesheet('player', 'player.png', {
+            frameWidth: 48,  
+            frameHeight: 48, 
+            
+        });
+
+        // Chargement des sons
+        this.load.audio('blaster', 'sounds/blaster.mp3');
     }
 
     create ()
