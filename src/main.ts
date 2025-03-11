@@ -1,5 +1,6 @@
 import { Boot } from './scenes/Boot';
 import { Game as MainGame } from './scenes/Game';
+import { PhysicGame } from './scenes/PhysicGame';
 import { GameOver } from './scenes/GameOver';
 import { MainMenu } from './scenes/MainMenu';
 import { Preloader } from './scenes/Preloader';
@@ -25,8 +26,10 @@ const config: Types.Core.GameConfig = {
         Boot,
         Preloader,
         MainMenu,
+        PhysicGame,
         MainGame,
-        GameOver
+        GameOver,
+        
     ]
 };
 

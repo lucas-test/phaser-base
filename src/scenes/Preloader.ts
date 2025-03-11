@@ -44,8 +44,9 @@ export class Preloader extends Scene
         this.load.spritesheet('player', 'player.png', {
             frameWidth: 48,  
             frameHeight: 48, 
-            
         });
+
+        this.load.image('beach_ball', 'beach_ball.png',);
 
         // Chargement des sons
         this.load.audio('blaster', 'sounds/blaster.mp3');
